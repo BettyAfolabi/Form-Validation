@@ -63,8 +63,6 @@ const App = () => {
       placeholder: "Email",
       errorMessage: "It must be a valid email address",
       label: "Email Address",
-      pattern:
-        " /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$/",
       required: true,
     },
   ];
