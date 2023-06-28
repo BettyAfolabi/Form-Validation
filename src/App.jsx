@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import "./App.css";
 import FormInput from "./components/formInput";
+import { useNavigate } from "react-router-dom";
 
-function App() {
+const App = () => {
+  const navigate = useNavigate();
   const [values, setValues] = useState({
     name: "",
     birthdate: "",
@@ -69,6 +71,7 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    navigate("/success");
   };
 
   const handleChange = (e) => {
@@ -92,6 +95,6 @@ function App() {
       </div>
     </>
   );
-}
+};
 
 export default App;
