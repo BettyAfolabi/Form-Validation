@@ -37,7 +37,7 @@ const App = () => {
     {
       id: 3,
       name: "password",
-      type: "text",
+      type: "password",
       placeholder: "Password",
       errorMessage:
         "Password should be 7-16 characters and include at least 1 uppercase letter, 1 number and 1 special character",
@@ -49,7 +49,7 @@ const App = () => {
     {
       id: 4,
       name: "confirmPassword",
-      type: "text",
+      type: "password",
       placeholder: "confirm password",
       errorMessage: "Password doesn't match",
       label: "Confirm Password",
